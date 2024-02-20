@@ -1,11 +1,13 @@
 body.dark-mode {
     background-color: #333; /* Dark background color */
     color: #fff; /* Light text color */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text color */
 }
 
 .container.dark-mode {
     background-color: #333; /* Dark container background color */
     color: #fff; /* Light text color */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text color */
 }
 
 .toggle-dark-mode {
