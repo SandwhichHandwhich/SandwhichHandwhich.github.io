@@ -1,13 +1,13 @@
 body.dark-mode {
-    background-color: #333; /* Dark background color */
-    color: #fff; /* Light text color */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text color */
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .container.dark-mode {
-    background-color: #333; /* Dark container background color */
-    color: #fff; /* Light text color */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text color */
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .toggle-dark-mode {
@@ -15,5 +15,5 @@ body.dark-mode {
     top: 10px;
     right: 10px;
     cursor: pointer;
-    color: #fff; /* Light text color for the button */
+    color: #fff;
 }
