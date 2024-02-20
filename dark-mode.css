@@ -1,0 +1,17 @@
+body.dark-mode {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Light text color */
+}
+
+.container.dark-mode {
+    background-color: #333; /* Dark container background color */
+    color: #fff; /* Light text color */
+}
+
+.toggle-dark-mode {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #fff; /* Light text color for the button */
+}
