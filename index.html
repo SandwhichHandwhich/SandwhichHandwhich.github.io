@@ -6,33 +6,33 @@
     <title>Sandwich</title>
     <style>
         body {
-            background-color: #ffeecc;
-            font-family: 'Arial', sans-serif;
             display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
             margin: 0;
-            transition: background-color 0.3s ease;
+            font-family: 'Arial', sans-serif;
         }
 
-        body.dark-mode {
+        .sidebar {
+            width: 250px;
             background-color: #333;
-            color: #fff;
+            padding: 20px;
+            color: white;
+            border-right: 2px solid #555; /* Border on the right for a cozy look */
+            box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2); /* Shadow on the right for depth */
         }
 
         .container {
+            flex-grow: 1;
             text-align: center;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
             background-color: #fff;
-            transition: background-color 0.3s ease; 
+            transition: background-color 0.3s ease; /* Smooth transition for dark mode */
         }
 
         .container.dark-mode {
-            background-color: #333;
-            color: #fff;
+            background-color: #333; /* Dark container background color */
+            color: #fff; /* Light text color */
         }
 
         h1 {
@@ -43,7 +43,7 @@
         .sandwich-image {
             max-width: 100%;
             height: auto;
-            margin-top: 20px;
+            margin-top: 20px; /* Adjust as needed */
         }
 
         .toggle-dark-mode {
@@ -55,9 +55,18 @@
     </style>
 </head>
 <body>
+    <div class="sidebar">
+        <h2>Sidebar</h2>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </div>
+
     <div class="container">
         <h1>mm sandwich tasty</h1>
-        <img src="images/sandwhich1.jpg" alt="Sandwich" class="sandwich-image">
+        <img src="images/sandwich1.jpg" alt="Sandwich" class="sandwich-image">
         <div class="toggle-dark-mode" onclick="toggleDarkMode()">Toggle Dark Mode</div>
     </div>
 
