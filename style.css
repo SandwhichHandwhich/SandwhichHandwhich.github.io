@@ -6,6 +6,12 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
+    transition: background-color 0.3s ease; /* Smooth transition for dark mode */
+}
+
+body.dark-mode {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Light text color */
 }
 
 .container {
@@ -14,10 +20,24 @@ body {
     border-radius: 15px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
     background-color: #fff;
+    transition: background-color 0.3s ease; /* Smooth transition for dark mode */
+}
+
+.container.dark-mode {
+    background-color: #333; /* Dark container background color */
+    color: #fff; /* Light text color */
 }
 
 h1 {
     color: #ff6347; /* Tomato red */
     font-size: 28px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.toggle-dark-mode {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #fff; /* Light text color for the button */
 }
