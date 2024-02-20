@@ -15,5 +15,5 @@ body.dark-mode {
     top: 10px;
     right: 10px;
     cursor: pointer;
-    color: #000000;
+    color: #fff; /* Light text color for the button */
 }
