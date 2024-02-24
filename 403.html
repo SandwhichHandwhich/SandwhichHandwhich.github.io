@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sandwich</title>
+<style>
+body {
+  background-color: #ffeecc;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  transition: background-color 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.container.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+h1 {
+  color: tomato; /* Tomato red */
+  font-size: 24px;
+}
+
+.sandwich-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.toggle-dark-mode {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+/* Custom 403 styles */
+.container.error-page {
+  background-color: #ffeecc; /* Keep the background color */
+}
+
+.container.error-page h1 {
+  color: #e74c3c; /* Custom color for error message */
+}
+
+.sandwich-image.error-page {
+  display: none; /* Remove the image on the error page */
+}
+</style>
+</head>
+<body class="error-page">
+<div class="container">
+  <h1>Uh oh! This page can't be found - 403 Error</h1>
+  <div class="toggle-dark-mode" onclick="toggleDarkMode()">Toggle Dark Mode</div>
+</div>
+
+<script>
+function toggleDarkMode() {
+  document.body.classList.toggle('dark-mode');
+  document.querySelector('.container').classList.toggle('dark-mode');
+}
+</script>
+</body>
+</html>
