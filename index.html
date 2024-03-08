@@ -6,74 +6,65 @@
 <title>Sandwich</title>
 <style>
 body {
-    display: flex;
-    height: 100vh;
-    margin: 0;
-    transition: background-color 0.3s ease;
+background-color: #ffeecc;
+font-family: 'Arial', sans-serif;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100vh;
+margin: 0;
+transition: background-color 0.3s ease;
 }
 
 body.dark-mode {
-    background-color: #333;
-    color: #fff;
+background-color: #333;
+color: #fff;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    background-color: #fff;
-    transition: background-color 0.3s ease;
-    margin-left: 250px; /* Width of the sidebar */
+text-align: center;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+background-color: #fff;
+transition: background-color 0.3s ease;
 }
 
 .container.dark-mode {
-    background-color: #333;
-    color: #fff;
-}
-
-.sidebar {
-    width: 250px;
-    background-color: #333;
-    padding: 20px;
+background-color: #333;
+color: #fff;
 }
 
 h1 {
-    color: tomato; /* Tomato red */
-    font-size: 24px;
+color: tomato; /* Tomato red */
+font-size: 24px;
 }
 
 .sandwich-image {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
+max-width: 100%;
+height: auto;
+margin-top: 20px;
 }
 
 .toggle-dark-mode {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
+position: fixed;
+top: 10px;
+right: 10px;
+cursor: pointer;
 }
 </style>
 </head>
 <body>
-<div class="sidebar">
-    <!-- Sidebar content goes here -->
-    <p>Sidebar Content</p>
-</div>
 <div class="container">
-    <h1>mm sandwich tasty</h1>
-    <img src="images/sandwich1.jpg" alt="Sandwich" class="sandwich-image">
-    <div class="toggle-dark-mode" onclick="toggleDarkMode()">Toggle Dark Mode</div>
+<h1>mm sandwich tasty</h1>
+<img src="images/sandwhich1.jpg" alt="Sandwich" class="sandwich-image">
+<div class="toggle-dark-mode" onclick="toggleDarkMode()">Toggle Dark Mode</div>
 </div>
 
 <script>
 function toggleDarkMode() {
-    document.body.classList.toggle('dark-mode');
-    document.querySelector('.container').classList.toggle('dark-mode');
+document.body.classList.toggle('dark-mode');
+document.querySelector('.container').classList.toggle('dark-mode');
 }
 </script>
 </body>
